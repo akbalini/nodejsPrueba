@@ -24,7 +24,7 @@ var standardGreeting = 'Hello World!';
 var greetingSchema = mongoose.Shema({
 sentence: String
 });
-var Greeting = mongoose.model('Greeting'greentingSchema);
+var Greeting = mongoose.model('Greeting',greentingSchema);
 db = mongoose.connect(dbPath);
 
 mongoose.connection.once('open',function() {
