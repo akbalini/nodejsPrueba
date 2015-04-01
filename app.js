@@ -24,10 +24,10 @@ var standardGreeting = 'Hello World!';
 var greetingSchema = mongoose.Shema({
 sentence: String
 });
-var Greeting = mongoose.model('GreetingreentingSchema');
+var Greeting = mongoose.model('Greeting'greentingSchema);
 db = mongoose.connect(dbPath);
 
-mongoose.connection.once('openunction() {
+mongoose.connection.once('open',function() {
  var greeting; 
 Greeting.find( function(err, greetings){
     if( !greetings ){
